@@ -44,7 +44,7 @@ function mensaje(montoFinal, montoCompra) {
 do {
 
     montoCompra = prompt("Ingrese el monto total de su compra: ");
-    tarjeta = prompt("Con que tarjeta desea abonar, alguna de ellas poseen descuentos adicionales.(visa 10%, master 5% u otra: sin desc.) Digite el nombre de su tarjeta: "
+    tarjeta = prompt("Con que tarjeta desea abonar?\nAlguna de ellas poseen descuentos adicionales. \n- visa 10%\n- master 5%\n- otra: sin desc.\n Digite el nombre de su tarjeta: "
 );
     if (!isNaN(montoCompra) && isNaN(tarjeta)) {
         if (montoCompra >= 60000) {
@@ -64,7 +64,7 @@ do {
     }
     
     mensaje(montoFinal, montoCompra);
-    salida =prompt("Si desea realizar otra operacion ingrese Y, si desea salir ingrese ESC");
+    salida =prompt("Si desea realizar otra operacion ingrese Y\nSi desea salir ingrese ESC");
 
     if (salida===0) {
         montoCompra=0;
