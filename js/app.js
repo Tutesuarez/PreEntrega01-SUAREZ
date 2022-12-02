@@ -46,6 +46,8 @@ do {
     montoCompra = prompt("Ingrese el monto total de su compra: ");
     tarjeta = prompt("Con que tarjeta desea abonar?\nAlguna de ellas poseen descuentos adicionales. \n- visa 10%\n- master 5%\n- otra: sin desc.\n Digite el nombre de su tarjeta: "
 );
+    tarjeta=tarjeta.toLowerCase();
+
     if (!isNaN(montoCompra) && isNaN(tarjeta)) {
         if (montoCompra >= 60000) {
             porcentaje = 0.7;
@@ -65,6 +67,7 @@ do {
     
     mensaje(montoFinal, montoCompra);
     salida =prompt("Si desea realizar otra operacion ingrese Y\nSi desea salir ingrese ESC");
+    salida= salida.toUpperCase();
 
     if (salida===0) {
         montoCompra=0;
