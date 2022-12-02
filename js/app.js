@@ -64,11 +64,11 @@ do {
     }
     
     mensaje(montoFinal, montoCompra);
-    salida =prompt("Si desea realizar otra operacioningrese ingrese un valor distinto de 0, si desea salir ingrese 0");
+    salida =prompt("Si desea realizar otra operacion ingrese Y, si desea salir ingrese ESC");
 
     if (salida===0) {
         montoCompra=0;
         montoFinal=0;
     }
 
-} while (salida!=0);
+} while (salida!="ESC");
