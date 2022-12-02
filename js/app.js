@@ -35,7 +35,7 @@ const descuentoPorTarjeta = (descuentoInicial, tarjeta) => {
 };
 
 function mensaje(montoFinal, montoCompra) {
-    alert("El monto a abonar es de: " + montoFinal +
+    alert("El monto a abonar es de: " + montoFinal +"\n"+
         "Su inicial fue de: " + montoCompra);
 }
 
